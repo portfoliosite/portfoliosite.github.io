@@ -1,0 +1,103 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .composition-head
+    .h1
+      font-size: 64px
+
+  .s
+    &-gallery, &-review, &-partners
+      padding: 8% 0
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .composition-head
+    .h1
+      font-size: 48px
+  .header-contacts
+    text-align: left
+    i::before
+      display: block
+      width: 16px
+      text-align: center
+
+  .s-call
+    &::before
+      width: 100%
+    .callback
+      padding: 12% 0
+
+  .footer-address
+    .footer-phone
+      font-size: 24px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .composition-head
+    .h1
+      font-size: 36px
+
+  .header-composition
+    p
+      margin-top: 30px
+
+  .quotes
+    display: none
+
+  .partners
+    .owl-nav
+      > div
+        &.owl-prev
+          left: 0
+        &.owl-next
+          right: 0
+  .s-partners
+    .h2
+      margin: 0
+
+  .footer-social
+    margin-top: 0
+    .soc li a
+      margin-top: 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .composition-head
+    .h1
+      font-size: 22px
+    p
+      span
+        font-size: 10px
+    strong
+      padding-top: 15px
+      font-size: 14px
+  .header-composition
+    p
+      margin-top: 20px
+      font-size: 14px
+  .button
+    padding: 12px 20px
+  .header-contacts
+    font-size: 12px
+
+  .fotorama
+    &__nav
+      &-wrap
+        bottom: 0
+
+  .footer-menu
+    padding-left: 20px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  .composition-head
+    p
+      span
+        font-size: 9px
+        margin: 0 5px
+    strong
+      padding-top: 15px
+      font-size: 14px
+  .logo
+    img
+      margin-left: 10px

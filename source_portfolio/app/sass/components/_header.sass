@@ -1,0 +1,195 @@
+@import "../settings/vars"
+
+body
+  &.ishome
+    .header
+      min-height: 700px
+      height: 100vh
+      background-color: $dark
+      color: #fff
+      .top-line
+        padding-top: 40px
+        position: absolute
+        z-index: 1
+        width: 100%
+
+.logo
+  img
+    width: 250px
+    height: auto
+    margin-left: 45px
+
+.phone
+  position: absolute
+  right: 85px
+  top: 44px
+  font-family: firasans, sans-serif
+  font-size: 22px
+  white-space: nowrap
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+.hamburger
+  right: 0
+  position: absolute
+  top: 34px
+  .hamburger-box
+    width: 34px
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+  width: 34px
+  height: 3px
+  background-color: #fff
+
+.mm-navbar
+  height: 80px
+  border: 0
+  position: relative
+
+.mm-navbar>*
+  padding: 0 0 20px
+
+.mm-panels>.mm-panel:after, .mm-panels>.mm-panel:before
+  height: 0
+
+html.mm-opened
+  overflow-y: scroll
+
+.mm-panels > .mm-panel.mm-hasnavbar
+  right: -18px
+
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+  margin-top: 20px
+
+.mm-menu.mm-theme-black .mm-navbar a img
+  width: 150px
+  height: auto
+
+.mm-menu.mm-theme-black .mm-listview>li.mm-selected>a:not(.mm-next), .mm-menu.mm-theme-black .mm-listview>li.mm-selected>span
+  background-color: transparent
+  color: $accent
+
+.mm-listview>li:not(.mm-divider):after
+  border-bottom: 0
+
+.mm-listview
+  > li
+    > a
+      transition: color .25s ease
+      padding:
+        left: 14%
+        right: 14%
+        top: 8px
+      &:hover
+        color: $accent
+        &::before
+          color: $accent
+        cursor: pointer
+      &::before
+        content: '\f21c'
+        font-family: FontAwesome
+        margin-right: 8px
+        color: #fff
+        transition: color .25s ease
+
+.header-info
+  display: flex
+  height: 100%
+  top: 0
+
+.header-info-inner
+  margin: auto
+
+.header-composition
+  text-align: center
+  position: relative
+  p
+    margin-top: 40px
+  .button
+    margin-top: 20px
+
+.composition-head
+  p
+    font-size: 14px
+    text-transform: uppercase
+    display: flex
+    align-items: center
+    white-space: nowrap
+    margin: 0
+    &::before, &::after
+      content: ''
+      height: 1px
+      width: 100%
+      position: relative
+      background-color: #fff
+      display: inline-block
+    span
+      margin: 0 10px
+  .h1
+    font-weight: 100
+    font-size: 70px
+    white-space: nowrap
+    margin: 0
+    line-height: 1.6
+    border-bottom: 1px solid #fff
+  strong
+    font-size: 17px
+    text-transform: uppercase
+    display: block
+    padding-top: 25px
+    .fa
+      margin-right: 10px
+      font-size: 12px
+      color: #aa6933
+      &:last-child
+        margin-right: inherit
+        margin-left: 10px
+
+.header-social
+  position: absolute
+  display: flex
+  right: 0
+  top: 0
+  height: 100%
+  border-left: rgba(#fff, .1) 1px solid
+  padding: 0 12.5px
+
+.soc
+  margin: auto
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+  a
+    color: #2c2c2c
+    display: block
+    background-color: rgba(#fff, .2)
+    height: 38px
+    width: 38px
+    border-radius: 50%
+    font-size: 17px
+    text-align: center
+    margin: 18px 0
+    line-height: 38px
+    transition: background-color .25s ease
+    &:hover
+      background-color: rgba(#fff, .4)
+      cursor: pointer
+
+.header-contacts
+  position: absolute
+  bottom: 0
+  left: 0
+  border-top: rgba(#fff, .15) 1px solid
+  padding: 12.5px 0
+  width: 100%
+  background-color: rgba(#151515, .15)
+  text-align: center
+  .fa
+    margin-right: 10px
+    color: #555
+  .phone-h
+    font-family: firasans, sans-serif
