@@ -1,0 +1,103 @@
+.s-pay
+	padding: 120px 0
+
+.tooltip-inner
+	background-color: transparent
+	color: $default-color
+	font-size: 16px
+	font-weight: 700
+	font-family: $default-font
+
+.tooltip.top .tooltip-arrow
+	display: none
+
+.slider-selection
+	box-shadow: none
+
+.slider-selection, .slider-track-high, .slider-track-low
+	border-radius: 3px
+
+.slider-selection.tick-slider-selection
+  background: -moz-linear-gradient(45deg, #fdf38c 0%, #ffaf00 100%)
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #fdf38c), color-stop(100%, #ffaf00))
+  background: -webkit-linear-gradient(45deg, #fdf38c 0%, #ffaf00 100%)
+  background: -o-linear-gradient(45deg, #fdf38c 0%, #ffaf00 100%)
+  background: -ms-linear-gradient(45deg, #fdf38c 0%, #ffaf00 100%)
+  background: linear-gradient(45deg, #fdf38c 0%, #ffaf00 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf00', endColorstr='#fdf38c',GradientType=1 )
+
+.slider-tick.in-selection
+	background-color: #fff
+	background-image: none
+
+.slider-tick.round
+	border-radius: 0
+
+.slider-tick
+	width: 4px
+	height: 10px
+	top: 5px
+	box-shadow: none
+	background-image: none
+	background-color: #fff
+
+.slider.slider-horizontal
+	.slider-handle
+		background-color: #fff
+		background-image: none
+		box-shadow: 0 4px 10px rgba(0,0,0,.4)
+		width: 25px
+		height: 25px
+		top: -5px
+.slider-track
+	background-color: #ddd
+	background-image: none
+	box-shadow: none
+	border-radius: 3px
+
+.slider-tick-container
+	> div
+		&:first-child, &:last-child
+			display: none
+
+.orders-month
+	text-align: center
+	color: $yellow
+	font-size: 18px
+	font-weight: 400
+	padding: 96px 0 86px
+
+.tooltip.in
+	opacity: 1
+
+.slider .tooltip.top
+	margin-top: -62px
+
+.slider.slider-horizontal .slider-tick
+	margin-left: 0
+
+.drag
+	text-transform: uppercase
+	color: #bdbdbd
+	font-size: 18px
+	text-align: center
+	padding: 0 25px
+	display: table
+	margin: 0 auto
+	position: relative
+	font-weight: 100
+	margin-top: 5px
+	&::before, &::after
+		position: absolute
+		font-family: FontAwesome
+		top: 2px
+		font-weight: 100
+	&::before
+		content: '\f177'
+		left: 0
+	&::after
+		content: '\f178'
+		right: 0
+
+.slider.slider-horizontal .slider-track
+	height: 6px

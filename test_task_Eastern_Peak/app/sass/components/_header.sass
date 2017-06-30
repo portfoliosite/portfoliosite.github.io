@@ -1,0 +1,82 @@
+@import "../settings/vars"
+
+.s-header
+  min-height: 840px
+  background: #f1f1f1 url(../img/header_bg.png) no-repeat center
+  padding-top: 100px
+  overflow: hidden
+  .carousel-wrap
+    padding-top: 60px
+
+  .carousel-nav
+    text-align: center
+    line-height: 24px
+    a
+      color: $default-color
+      text-decoration: none
+      font-size: 18px
+      text-transform: uppercase
+      transition: color .25s ease
+      &:hover, .active
+        color: $yellow
+    .active
+      border-bottom: 4px solid $yellow
+      a
+        color: $yellow
+  .carousel-item
+    padding-bottom: 10px
+    border-bottom: 4px solid transparent
+    span
+      display: block
+  .carousel-body
+    padding-top: 90px
+    position: relative
+    img
+      margin-top: 38px
+    .owl-nav
+      position: absolute
+      top: 0
+      width: 100%
+      z-index: 2
+      text-align: center
+      left: 50%
+      > div
+        color: #2f2c38
+        font-size: 26px
+        position: absolute
+      .owl-prev
+        left: -40px
+      .owl-next
+        left: 29px
+  .carousel-content
+    padding: 0 23px 13px
+    border-radius: 15px
+    margin-bottom: 20px
+    &:first-child
+      border: 1px dashed #a29f9e
+      h2
+        border-bottom: none
+        color: $yellow
+    h2
+      font-size: 25px
+      font-weight: 400
+      border-bottom: 1px dashed
+      display: inline-block
+      padding-bottom: 2px
+      margin-bottom: 12px
+    p
+      font-size: 19px
+      font-weight: 100
+      line-height: 30px
+
+.number-slider-wrap
+    position: relative  
+
+.number-slider
+  color: #2f2c38
+  font-size: 16px
+  font-weight: 700
+  position: absolute
+  left: 50% 
+  top:  10px
+  transform: translateX(-50%);
