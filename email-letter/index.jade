@@ -1,0 +1,52 @@
+doctype html
+html
+	head
+		link(rel="stylesheet", href="css/style.css")
+		meta(charset="utf-8")
+
+	body
+		.email-container
+			.email-header
+				.email-center
+					.email-header-topline.clearfix
+						a.email-logo(href="//site.com")
+							img(src="img/logo.png", alt="Email Logo")
+						
+						.email-social-wrap
+							a(href="#")
+								img(src="img/soc_twitter.png", alt="Alt")
+							a(href="#")
+								img(src="img/soc_vk.png", alt="Alt")
+							a(href="#")
+								img(src="img/soc_fb.png", alt="Alt")
+
+					.email-header-top.
+						Самое лучшее предложение<br> из всех, которые вы получал
+
+					a(href="#").email-button Подробнее
+
+			.email-content
+				.email-center
+					.email-tizers-wrap
+						.email-tizer-item
+							img(src="img/icon_1.png", alt="Alt")
+							p У нас есть лапки
+						.email-tizer-item
+							img(src="img/icon_2.png", alt="Alt")
+							p ... и бумажные самолетики
+						.email-tizer-item
+							img(src="img/icon_3.png", alt="Alt")
+							p Кроме того, у нас есть чемодан
+
+					.email-sale-text Заказывая сейчас - получаете скидку
+
+					.email-products-wrap
+						- for (var x = 1; x < 5; x++)
+							.email-products-item
+								a(href="#")
+									img(src="img/items/" + x + ".jpg", alt="Alt")
+								.email-price $2000
+								a(href="#").product-button Заказать
+
+			.email-footer.
+				ООО "Лучшее предложение" <a href="#">Отписаться от рассылки</a>
