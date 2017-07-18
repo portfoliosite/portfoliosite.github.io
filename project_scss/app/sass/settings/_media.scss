@@ -1,0 +1,10 @@
+/* Large Devices, Wide Screens */
+$lg: only screen and (max-width : 1200px);
+/* Medium Devices, Desktops */
+$md: only screen and (max-width : 992px);
+/* Small Devices, Tablets */
+$x-md: only screen and (max-width : 768px);
+/* Extra Small Devices, Phones */
+$sm: only screen and (max-width : 480px);
+/* Custom, iPhone Retina */
+$x-sm: only screen and (max-width : 320px);

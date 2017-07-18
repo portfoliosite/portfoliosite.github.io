@@ -1,0 +1,46 @@
+@import "../settings/vars";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.75;
+  font-family: $default-font;
+  overflow-x: hidden;
+  opacity: 1;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header, section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  background-color: #fff;
+  &.inverse {
+    color: #fff;
+    background-color: $dark;
+  }
+  .h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: $accent;
+    span {
+      color: #fff;
+    }
+  }
+}

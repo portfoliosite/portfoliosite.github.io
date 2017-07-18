@@ -1,0 +1,43 @@
+@import "../settings/vars"
+
+.s
+  &-gallery, &-review, &-partners
+    padding: 5% 0
+  &-gallery
+    p
+      margin: 30px 0
+      font-size: 18px
+  &-call
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: 0
+    &::before
+      content: ''
+      width: 50%
+      right: 0
+      height: 100%
+      position: absolute
+      background-color: rgba($accent, .92)
+
+    &.inverse
+      background-color: #fff
+
+  &-partners
+    &.section-overlay
+      &::before
+        background-color: #fff
+    .h2
+      margin-top: 0
+      span
+        color: $accent
+
+.section-overlay
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $over
+    opacity: .92
