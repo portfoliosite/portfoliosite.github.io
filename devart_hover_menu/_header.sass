@@ -1,0 +1,338 @@
+@import "../settings/vars"
+
+.s-header
+  min-height: 796px
+  background: #041224
+  background-repeat: no-repeat
+  background-position: center top
+  position: relative
+
+/* Start Nav Bar */
+.menu__drop
+  opacity: 0
+  position: absolute
+  width: 100%
+  left: 0
+  z-index: 1000
+  float: left
+  min-width: 160px
+  padding: 5px 0
+  margin: 2px 0 0
+  margin-top: 2px
+  list-style: none
+  font-size: 14px
+  text-align: left
+  background-color: #fff
+  -webkit-background-clip: padding-box
+  background-clip: padding-box
+  top: -9999em
+  transition: .5s opacity
+  padding: 29px 0 46px
+  box-shadow: none
+  h4
+    margin-top: 15px
+  p
+    font-size: 16px
+    font-family: $opensans
+    line-height: 26px
+  .well
+    border: 0
+    box-shadow: none
+    border-radius: 0
+    background-color: #fafafa
+    padding-top: 0
+    overflow: hidden
+    margin-bottom: 0
+    .nav-dropdown
+      ul.nav-dropdown-list
+        padding-bottom: 20px
+        a
+          cursor: pointer
+
+.dropdown
+  position: relative
+  box-shadow: none
+
+.navbar-nav
+  > li
+    background: rgba(255,255,255,0)
+    box-shadow: none
+    &:hover
+      background: rgba(255,255,255,1)
+      transition: background .3s ease
+      box-shadow: none
+      .menu__drop
+        opacity: 1
+        top: 93%
+        box-shadow: none
+
+.navbar
+  margin-bottom: 0
+.navbar-default
+  border: none
+  background-color: transparent
+
+.navbar-header
+  padding-right: 61px
+
+.navbar-brand
+  padding: 20px 15px
+  height: 72px
+
+.nav > li > a
+  padding: 10px 21px
+  transition: .5s all
+
+.navbar-nav > li > a
+  padding-top: 26px
+  padding-bottom: 26px
+
+.navbar-default .navbar-nav > li > a
+  color: $white
+  font-size: 16px
+  text-transform: uppercase
+  transition: color .25s ease
+  &:hover
+    color: $default-color
+
+.navbar-default .navbar-nav>.open>a:focus
+  background-color: $white
+
+.navbar-default
+  .navbar-toggle
+    border-color: $blue
+    .icon-bar
+      background-color: $blue
+    &:focus
+      background-color: #04182f
+
+
+.search-form
+  margin: 0
+  padding: 0
+
+.search-button
+  padding: 22px 20px
+
+.search-button, .shopping-cart
+  background-color: transparent
+  border: none
+  i.fa
+    color: $white
+    font-size: 20px
+    cursor: pointer
+  &:hover
+    i.fa
+      color: $default-color
+
+.shopping-cart
+  position: relative
+  .shopping-cart-number
+    position: absolute
+    top: -9px
+    right: -11px
+    border-radius: 10em
+    width: 18px
+    height: 18px
+    color: $white
+    background-color: $blue
+    font-size: 11px
+    text-align: center
+    line-height: 18px
+    box-shadow: -1px 2px 2px #000
+
+.nav>li
+  position: static
+
+.hover-menu-item
+  background-color: #fff
+  transition: .5s ease
+  transition-delay: .2s
+  > a, i.fa
+    color: $default-color !important
+
+.dropdown-menu-full
+  width: 100%
+  right: 100%
+
+.dropdown-menu
+  border: none
+  box-shadow: none
+  padding: 29px 0 46px
+  h4
+    margin-top: 15px
+  p
+    font-size: 16px
+    font-family: $opensans
+    line-height: 26px
+  .well
+    border: 0
+    box-shadow: none
+    border-radius: 0
+    background-color: #fafafa
+    padding-top: 0
+    overflow: hidden
+    margin-bottom: 0
+    .nav-dropdown
+      ul.nav-dropdown-list
+        padding-bottom: 20px
+        a
+          cursor: pointer
+
+.nav-dropdown
+  ul
+    list-style-type: none
+    padding: 10px 0 0 0
+    margin: 0
+    li
+      padding-bottom: 2px
+    a
+      color: $blue
+      font-size: 18px
+      font-weight: 500
+
+.navbar-nav>li>.dropdown-menu
+  margin-top: -3px
+
+.dropdown-list-group
+  padding: 0
+  margin: 0
+  li
+    list-style-type: none
+    padding-bottom: 18px
+    transition: all .3s ease
+    cursor: pointer
+    padding: 0 20px 5px
+    margin-bottom: 16px
+    overflow: hidden
+    &:last-child
+      margin-bottom: 0
+    &:hover
+      background-color: $blue
+      h4
+        color: $white
+      p
+        color: rgba($white, .5)
+
+.nav-tools
+  ul
+    padding-bottom: 18px
+
+.dropdown-item-before
+  &::before
+    position: absolute
+    content: ''
+    background-color: #d9d9d9
+    height: 100%
+    width: 1px
+    bottom: 0
+  .dropdown-list-group
+    padding-left: 32px
+  
+.dropdown-item-after
+  &::after
+    position: absolute
+    content: ''
+    background-color: #d9d9d9
+    height: 100%
+    width: 1px
+    bottom: 0
+    right: -15px
+
+
+.dropdown-item-tools
+  padding-left: 50px
+
+.dropdown-item-container
+  padding-bottom: 30px
+
+.dropdown-footer
+  display: flex
+  border-top: 1px solid #d9d9d9
+  padding-top: 40px
+  a
+    font-size: 22px
+    color: #3c3c3c
+    text-decoration: none
+    font-weight: 500
+    transition: color .25s ease
+    &:hover
+      color: #4bb900
+    &:first-child
+      margin-right: 98px
+
+.dropdown-menu
+  h3
+    font-weight: 100
+    margin-top: 8px
+    margin-bottom: 20px
+
+.dropdown-support-wrap
+  p
+    margin-bottom: 0
+    max-width: 310px
+  ul
+    padding-top: 56px
+    padding-left: 20px
+
+.nav
+  > li
+    &.pos-rel
+      position: relative
+
+.dropdown-menu
+  box-shadow: 0 12px 20px rgba(0,0,0,.3)
+  &.dropdown-lang
+    min-width: 76px
+    padding-top: 10px
+    padding-bottom: 14px
+    border-radius: 0
+    overflow: hidden
+    a
+      font-size: 16px
+      text-transform: uppercase
+      padding: 10px 20px
+      font-weight: 500
+/* End Nav Bar */
+
+/* Start Header Text */
+.header-composition
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 0
+  h1
+    font-size: 70px
+    font-weight: 500
+    color: $white
+    line-height: normal
+    text-transform: none
+    text-indent: -12px
+  .title-bottom
+    font-size: 31px
+    font-weight: 300
+    text-align: center
+    text-transform: uppercase
+    color: $white
+    letter-spacing: 11.6px
+  .header-composition-button
+    text-align: center
+    padding-top: 33px
+    a
+      border: 1px solid $blue
+      display: inline-block
+      padding: 10px 40px
+      color: $white
+      text-decoration: none
+      font-size: 18px
+      text-transform: uppercase
+      transition: background-color 0.3s ease
+      &:hover
+        background-color: $blue
+
+.navbar-collapse.collapse.in
+  background-color: #04182f
+  position: relative
+  z-index: 1
+/* End Header Text */
