@@ -1,0 +1,123 @@
+$color: #FF6347 //Theme skin
+$text_color: #888
+$main_color: #222
+$bg_light: #FAFAFA
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+
+a
+	color: $color
+
+p,
+body .footer,
+.s-about li
+	color: $text_color
+
+.color-element
+	color: $color
+
+.color-bg
+	background-color: $color
+
+.color-border
+	border-color: $color
+
+.main-color-bg
+	background-color: $main_color
+
+.bg-light
+	background-color: $bg_light
+
+.bg-dark
+	background-color: $main_color
+	color: #fff
+	.s-desc
+		&::after
+			background-color: #fff
+	a
+		color: #fff
+
+.top-menu
+	a
+		&:hover
+			color: $color
+	a
+		+kerning(4)
+
+.top-text
+	p
+		color: $bg_light
+		+kerning(5)
+
+.person-name
+	+kerning(2)
+
+.s-desc
+	+kerning(4)
+	&::after
+		background-color: $main_color
+
+section
+	h3
+		+kerning(3)
+		color: $text_color
+
+.summary-container
+	h3
+		color: $main_color
+		+kerning(1)
+		font-size: 16px
+		font-weight: 600
+
+.summary-item
+	.year
+		background-color: $color
+		color: #fff
+	.summary-desc
+		+kerning(1)
+
+.s-portfolio
+	li
+		color: $text_color
+		+kerning(2)
+	li.active
+		color: #fff
+		border-bottom: 1px solid $color
+
+.portfolio-item
+	.port-item-cont
+		a
+			border-color: $color
+			color: $color
+			text-decoration: none
+
+.footer a,
+.contacts-icon,
+.text-danger
+	color: $color
+
+form
+	.control-group
+		input:focus,
+		textarea:focus
+			border: 1px solid $color
+		+kerning(2)
+		color: $text_color
+	input,
+	textarea
+		+kerning(2)
+	button
+		background-color: $color
+		color: #fff
+		+kerning(2)
+		
+
+.popup_content
+	+kerning(1)
+
+path
+	fill: $color
